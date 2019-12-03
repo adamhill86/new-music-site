@@ -1,0 +1,50 @@
+// $primary: #008de6;
+// $primary: #0971af;
+// $primary: #38B5E6;
+// $accent: #FFC107;
+@import '@styles/_variables';
+
+.header {
+  height: 60px;
+  padding: 8px;
+  background-color: $primary;
+  color: $high-emphasis;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media screen and (mix-width: $breakpoint-sm) {
+    justify-content: space-between;
+  }
+}
+
+.link {
+  color: $high-emphasis;
+  margin: 0 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.active,
+  &:hover {
+    color: $accent;
+    text-decoration: underline;
+  }
+}
+
+.linkList {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    display: block;
+  }
+}
+
+.menu {
+  display: block;
+  height: 100%;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}

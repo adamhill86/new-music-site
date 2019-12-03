@@ -30,6 +30,15 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
+    {
+      resolve: 'gatsby-plugin-alias-imports',
+      options: {
+        alias: {
+          '@styles': 'src/styles',
+        },
+        extensions: ['scss'],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

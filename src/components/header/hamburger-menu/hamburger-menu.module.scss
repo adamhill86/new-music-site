@@ -1,0 +1,43 @@
+@import '@styles/_variables';
+
+.bar {
+  display: block;
+  height: 2px;
+  width: 35px;
+  background-color: $high-emphasis;
+  margin: 8px 0;
+  transition: all 0.1s ease;
+
+  //   &:first-child {
+  //     margin-top: 0;
+  //   }
+
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.active {
+  & .top {
+    transform: translateY(10px) rotateZ(45deg);
+  }
+
+  & .bottom {
+    transform: translateY(-10px) rotateZ(-45deg);
+  }
+
+  & .middle {
+    width: 0;
+  }
+}
